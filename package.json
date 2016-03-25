@@ -1,0 +1,48 @@
+{
+  "name": "kazi-web-app",
+  "version": "0.0.1",
+  "description": "IPFS app tool for Kazi based on ipfs-web-app tool (https://github.com/ipfs/ipfs-web-app)",
+  "main": "index.js",
+  "dependencies": {
+    "comandante": "0.0.1",
+    "ipfs-api": "^2.1.1",
+    "jquery": "^2.1.4",
+    "kew": "^0.6.0",
+    "lodash": "^3.10.0",
+    "opn": "^3.0.2",
+    "stream-sink": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "10.2.3",
+    "reactify": "1.1.1",
+    "standard": "3.3.2"
+  },
+  "bin": "./cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node dev.js",
+    "lint": "git diff --name-only --cached --relative | egrep .jsx?$ | xargs --no-run-if-empty standard"
+  },
+  "standard": {
+    "ignore": [
+      "versions",
+      "js/include"
+    ]
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Jhon Majoor for 1%club <jhon@onepercentclub.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "kazi ipfs"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
