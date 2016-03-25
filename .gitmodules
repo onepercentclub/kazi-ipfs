@@ -1,0 +1,4 @@
+[submodule "kazi-web-app"]
+	path = kazi-web-app
+	url = git@github.com:onepercentclub/kazi-web-app.git
+	branch = master
